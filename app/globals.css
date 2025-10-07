@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "@fontsource/cinzel/700.css";
+@import "@fontsource/poppins"; /* Default weight 400 */
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.h1-cinzel {
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+}
+
+.header-btn2 {
+  @apply bg-gradient-to-r from-light-primary to-dark-primary;
+}
+
+.hero-h1 {
+  @apply text-transparent bg-gradient-to-r from-light-primary to-blue-500 bg-clip-text;
+}
+
+.hero-h2 {
+  @apply text-transparent bg-gradient-to-r from-red-800 to-red-400 bg-clip-text;
+}
+
+.animate-bg {
+  animation: animate-bg 1s ease-in-out infinite;
+}
+
+@keyframes animate-bg {
+  from {
+    @apply bg-gradient-to-r from-light-primary via-red-800 to-red-400;
+  }
+  to {
+    @apply bg-gradient-to-r from-dark-primary via-red-500 to-red-200;
+  }
+}
+
+.animate_cl {
+      @apply bg-gradient-to-r from-light-primary via-blue-600 to-red-400;
+
+}
