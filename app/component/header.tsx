@@ -31,10 +31,10 @@ export function Header() {
         </nav>
 
         <div className="text-[0.9rem] hidden md:flex gap-3">
-          <button className="h-[40px] w-[140px] text-light-primary border border-light-primary outline-none rounded-md header-btn2  bg-light-background" onClick={() => router.push('../register')}>
+          <button className="h-[40px] w-[140px] border-none ring-1 ring-slate-400 outline-none text-slate-700 bg-slate-200">
            Sign up
           </button>
-          <button className="h-[40px] w-[140px] text-light-background border-none outline-none rounded-md header-btn2  bg-gradient-to-r from-light-primary via-blue-600 to-blue-400" onClick={() => router.push('../register')}>
+          <button className="h-[40px] w-[140px] border-none outline-none text-light-background bg-gradient-to-r from-light-primary via-blue-600 to-blue-400  rounded-lg" onClick={() => router.push('../register')}>
            Sign in
           </button>
         </div>  
