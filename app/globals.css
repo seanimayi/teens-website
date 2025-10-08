@@ -14,7 +14,11 @@ body {
 
 .h1-cinzel {
   font-family: "Cinzel", serif;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.image {
+  background: url('/public/images/bg-teens.png') center/cover no-repeat;
 }
 
 .header-btn2 {
@@ -44,5 +48,28 @@ body {
 
 .animate_cl {
       @apply bg-gradient-to-r from-light-primary via-blue-600 to-red-400;
+}
 
+.social_media_icons {
+  @apply h-[45px] w-[45px] rounded-[50px] ring-1 ring-slate-200 bg-slate-200 text-slate-800 flex justify-center items-center duration-150
+}
+
+.social_media_icons:hover {
+  @apply bg-light-primary text-light-background
+}
+
+.register-box {
+  @apply bg-light-background shadow-sm ring-1 ring-slate-100 md:w-[360px] w-[300px] py-3 px-3 flex justify-center items-center flex-col
+}
+
+.register-header {
+  @apply text-4xl font-bold
+}
+
+.circle1 {
+  @apply h-[290px] w-[290px] absolute -top-10 -right-20 bg-slate-600 rounded-full 
+}
+
+.circle2 {
+  @apply  h-[400px] w-[400px] absolute -bottom-10 -left-40 bg-slate-600 rounded-full 
 }

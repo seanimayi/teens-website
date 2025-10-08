@@ -5,10 +5,11 @@ import logo from "@/public/images/logoreal.png";
 import { MdMenu } from "react-icons/md";
 import { motion } from "framer-motion";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 
 export function Header() {
-  
+  const router = useRouter()
   return (
     <>
       <motion.div
@@ -29,12 +30,9 @@ export function Header() {
           <Link href="">ABOUT</Link>
         </nav>
 
-        <div className=" gap-3 text-[0.9rem] hidden md:flex">
-          <button className="h-[40px] w-[100px] border-2 border-light-primary text-light-primary outline-none rounded-md">
-            Sign in
-          </button>
-          <button className="h-[40px] w-[100px] text-light-background border-none outline-none rounded-md header-btn2">
-            Sign up
+        <div className="text-[0.9rem] hidden md:flex">
+          <button className="h-[40px] w-[140px] text-light-background border-none outline-none rounded-md header-btn2  bg-gradient-to-r from-light-primary via-blue-600 to-blue-400" onClick={() => router.push('../register')}>
+           Register
           </button>
         </div>
 
